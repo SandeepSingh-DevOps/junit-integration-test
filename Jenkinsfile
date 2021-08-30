@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/vdespa-collab/java-rest-api-calculator.git'
-                sh './mvnw clean compile -X'
+                sh './mvnw clean compile'
                 // bat '.\\mvnw clean compile'
             }
         }
